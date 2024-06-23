@@ -9,7 +9,7 @@ public class HomeController {
 
   @GetMapping("/")
   public String index(Model model) {
-    model.addAttribute("pageTitle", "Inicio | M. Piercer");
+    model.addAttribute("pageTitle", "Mila Piercer");
     return "index";
   }
 
