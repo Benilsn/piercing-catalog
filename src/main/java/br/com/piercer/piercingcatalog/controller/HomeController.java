@@ -9,31 +9,26 @@ public class HomeController {
 
   @GetMapping("/")
   public String index(Model model) {
-    model.addAttribute("pageTitle", "Home | Piercer");
+    model.addAttribute("pageTitle", "Inicio | M. Piercer");
     return "index";
   }
 
-  @GetMapping("/about")
-  public String about(Model model) {
-    model.addAttribute("pageTitle", "About | Piercer");
-    return "about";
-  }
-
-  @GetMapping("/contact")
-  public String contact(Model model) {
-    model.addAttribute("pageTitle", "Contact | Piercer");
-    return "contact";
-  }
-
-  @GetMapping("/pricing")
-  public String pricing(Model model) {
-    model.addAttribute("pageTitle", "Pricing | Piercer");
-    return "pricing";
-  }
-
-  @GetMapping("/we-do")
+  @GetMapping("/galeria")
   public String wedo(Model model) {
-    model.addAttribute("pageTitle", "We do | Piercer");
-    return "we-do";
+    model.addAttribute("pageTitle", "Galeria");
+    return "galeria";
   }
+
+  @GetMapping("/sobre")
+  public String about(Model model) {
+    model.addAttribute("pageTitle", "Sobre");
+    return "sobre";
+  }
+
+  @GetMapping("/contato")
+  public String contact(Model model) {
+    model.addAttribute("pageTitle", "Contato");
+    return "contato";
+  }
+
 }
