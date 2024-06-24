@@ -25,10 +25,10 @@ public class HomeController {
     return "sobre";
   }
 
-  @GetMapping("/contato")
+  @GetMapping("/agendamento")
   public String contact(Model model) {
-    model.addAttribute("pageTitle", "Contato");
-    return "contato";
+    model.addAttribute("pageTitle", "Agendar horário");
+    return "agendamento";
   }
 
 }

@@ -28,7 +28,7 @@
                             <li><a href="about.html"> About</a></li>
                             <li><a href="we-do.html">What we do</a></li>
                             <li><a href="pricing.html">Pricing</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="apointment.html">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="col-md-4 col-sm-6">
@@ -62,5 +62,19 @@
     <script th:src="@{/js/jquery.mCustomScrollbar.concat.min.js}"></script>
     <script th:src="@{/js/owl-carousel.js}"></script>
     <script th:src="@{/js/custom.js}"></script>
+
+    <!-- Flatpickr -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/pt.js"></script>
+
+    <script>
+        flatpickr("#appointment", {
+            enableTime: true,
+            dateFormat: "d/m/Y H:i",
+            minDate: "today",
+            theme: "dark",  // Apply black theme
+            locale: "pt"  // Set locale to Portuguese
+        });
+    </script>
 
 </div>
