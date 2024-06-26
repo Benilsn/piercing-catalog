@@ -14,7 +14,6 @@
 <div th:replace="~{fragments/banner :: banner}"></div>
 
 <div class="container mt-5">
-    <h1>Google Calendar Appointment</h1>
     <form th:action="@{/createEvent}" method="post" class="mt-3">
         <div class="form-group">
             <label for="name">Nome:</label>
@@ -36,7 +35,6 @@
             <label for="appointment">Selecione a data e hora:</label>
             <input type="text" id="appointment" name="appointment" class="form-control" required>
         </div>
-<!--        <a class="get_btn" th:href="@{/agendamento}" role="button">Agendar horário</a>-->
         <button type="submit" class="get_btn btn">Agendar</button>
     </form>
     <div th:if="${eventLink != null}" class="mt-3">

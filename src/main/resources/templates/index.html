@@ -27,9 +27,8 @@
                            <div class="col-md-6">
                               <img class="bann_img" th:src="@{/images/banner-piercieng.jpg}" alt="#"/>
                            </div>
-                           <div class="col-md-6">
-                              <span>01/03</span>
-                              <h1>Mila Piercer</h1>
+                           <div class="col-md-6 mt-5">
+                              <h1>Bem vindo(a)</h1>
                               <p>A paixão por piercings vai além da estética; acreditamos que cada peça é uma forma de expressão pessoal, carregada de significado e estilo.</p>
                               <a class="get_btn" th:href="@{/agendamento}" role="button">Agendar horário</a>
                            </div>
@@ -37,48 +36,6 @@
                      </div>
                   </div>
                </div>
-<!--               <div class="carousel-item">-->
-<!--                  <div class="container-fluid">-->
-<!--                     <div class="carousel-caption relative">-->
-<!--                        <div class="row d_flex">-->
-<!--                           <div class="col-md-6">-->
-<!--                              <img class="bann_img" th:src="@{/images/bg2.jpeg}" alt="#"/>-->
-<!--                           </div>-->
-<!--                           <div class="col-md-6">-->
-<!--                              <span>02/03</span>-->
-<!--                              <h1>Milina nail Salon Creating Beauty</h1>-->
-<!--                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo</p>-->
-<!--                              <a class="get_btn" href="Javascript:void(0)" role="button">Teste1</a>-->
-<!--                           </div>-->
-<!--                        </div>-->
-<!--                     </div>-->
-<!--                  </div>-->
-<!--               </div>-->
-<!--               <div class="carousel-item">-->
-<!--                  <div class="container-fluid">-->
-<!--                     <div class="carousel-caption relative">-->
-<!--                        <div class="row d_flex">-->
-<!--                           <div class="col-md-6">-->
-<!--                              <img class="bann_img" th:src="@{/images/banner-piercieng.jpg}" alt="#"/>-->
-<!--                           </div>-->
-<!--                           <div class="col-md-6">-->
-<!--                              <span>03/03</span>-->
-<!--                              <h1>Milina nail Salon Creating Beauty</h1>-->
-<!--                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo</p>-->
-<!--                              <a class="get_btn" href="Javascript:void(0)" role="button">Teste2</a>-->
-<!--                           </div>-->
-<!--                        </div>-->
-<!--                     </div>-->
-<!--                  </div>-->
-<!--               </div>-->
-<!--               <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">-->
-<!--               <i class="fa fa-long-arrow-left" aria-hidden="true"></i>-->
-<!--               <span class="sr-only">Previous</span>-->
-<!--               </a>-->
-<!--               <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">-->
-<!--               <i class="fa fa-long-arrow-right" aria-hidden="true"></i>-->
-<!--               <span class="sr-only">Next</span>-->
-<!--               </a>-->
             </div>
          </div>
       </section>
@@ -86,9 +43,30 @@
 
       <section th:replace="~{fragments/gallery :: gallery}"></section>
 
-      <div th:replace="~{fragments/about :: about}"></div>
+      <div class="about slin2" th:fragment="about">
+         <div class="container">
+            <div class="row d_flex">
+               <div class="col-md-6">
+                  <div class="titlepage">
+                     <h2>Sobre</h2>
+                     <p style="font-style: italic;">Trabalho com titânio e aço cirúrgico:</p>
+                     <p style="font-style: italic;">O titânio é um material biocompativel, e hipoalergico. O furo tende a ter um processo de cicatrização mais rápido e tranquilo.</p>
+                     <p style="font-style: italic;">O aço cirúrgico também é um ótimo material, mas algumas pessoas podem ter alergias.</p>
+                     <p style="font-style: italic;">Caso tenha a pele sensível e tendência a ter queloide opte sempre pela jóia de titânio para evitar transtornos posteriores.</p>
+                     <a class="read_more" th:href="@{/sobre}">Leia mais</a>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="about_img">
+                     <figure><img th:src="@{/images/titanium-piercing.jpg}" alt="#"/></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
 
       <div th:replace="~{fragments/location :: location}"></div>
+
 
       <div th:replace="~{fragments/footer :: footer}"></div>
 
