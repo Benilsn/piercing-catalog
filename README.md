@@ -26,20 +26,27 @@
 
 <br>
 
-## Pagina inicial:
+## Pagina inicial com estilo single page:
 
-<img src="src\main\resources\static\docs\pagina-inicial.png"></img>
-
-<br>
-<br>
-
-## Pagina de login:
-
-<img src="src\main\resources\static\docs\login-screen.png"></img>
+![img.png](src/main/resources/static/doc/img.png)
+![img_1.png](src/main/resources/static/doc/img_1.png)
+![img_2.png](src/main/resources/static/doc/img_2.png)
+![img_3.png](src/main/resources/static/doc/img_3.png)
 
 <br>
 <br>
 
-## Pagina de registro:
+## Galeria:
 
-<img src="src\main\resources\static\docs\register-screen.png"></img>
+![img_5.png](src/main/resources/static/doc/img_5.png)
+
+<br>
+<br>
+
+## Sobre:
+
+![img_6.png](src/main/resources/static/doc/img_6.png)
+
+## Agendamento:
+
+![img_4.png](src/main/resources/static/doc/img_4.png)
