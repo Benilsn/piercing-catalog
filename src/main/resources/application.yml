@@ -1,0 +1,8 @@
+server:
+  port: ${PORT:8080}
+
+spring:
+  application:
+    name: piercing-catalog
+  profiles:
+    active: ${ENVIRONMENT:dev}
