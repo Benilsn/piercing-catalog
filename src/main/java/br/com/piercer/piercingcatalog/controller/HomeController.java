@@ -9,24 +9,24 @@ public class HomeController {
 
   @GetMapping("/")
   public String index(Model model) {
-    model.addAttribute("pageTitle", "Mila Piercer");
+    model.addAttribute("pageTitle", "Mila Piercing");
     return "index";
   }
 
   @GetMapping("/galeria")
-  public String wedo(Model model) {
+  public String galeria(Model model) {
     model.addAttribute("pageTitle", "Galeria");
     return "galeria";
   }
 
   @GetMapping("/sobre")
-  public String about(Model model) {
+  public String sobre(Model model) {
     model.addAttribute("pageTitle", "Sobre");
     return "sobre";
   }
 
   @GetMapping("/agendamento")
-  public String contact(Model model) {
+  public String agendamento(Model model) {
     model.addAttribute("pageTitle", "Agendar horário");
     return "agendamento";
   }
